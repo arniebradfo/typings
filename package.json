@@ -1,6 +1,6 @@
 {
   "name": "adobexd-types",
-  "version": "45.0.0",
+  "version": "47.0.0",
   "main": "",
   "types": "index.d.ts",
   "description": "Typescript types for Adobe XD CC and UXP",
