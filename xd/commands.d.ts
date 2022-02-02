@@ -116,4 +116,30 @@ declare module 'commands' {
      * Flips the object vertically. Some objects such as Symbols cannot be flipped. Equivalent to Object > Flip > Vertically.
      */
     // function flipVertical(): void;
+
+    /**
+     * Makes a stack background. Equivalent to Object > Make Background, which is available when selecting a single SceneNode that simultaneously meets the following conditions:
+     * - is a stack cell
+     * - is a valid background candidate
+     * - belongs to a Stack that has no background
+     * - the Stack contains at least two stack cells
+     */
+    export function makeBackground(): void;
+
+    /**
+     * Replaces a stack background. Equivalent to Object > Replace Background, which is available when selecting a single SceneNode that simultaneously meets the following conditions:
+     * - is a stack cell
+     * - is a valid background candidate
+     * - belongs to a Stack that has no background
+     * - the Stack contains at least two stack cells
+     */
+    export function replaceBackground(): void;
+
+
+    /**
+     * Resets the 3D properties (X rotation, Y rotation, Z position) of selected objects (but not their content) to 0. Equivalent to Object > Transform > Reset 3D Transforms.
+     * @since XD 47
+     */
+    export function reset3DTransforms(): void;
+    
 }

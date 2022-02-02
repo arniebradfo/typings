@@ -25,6 +25,17 @@ declare module 'application' {
      * * It can return a Promise to extend the duration of the edit asynchronously
      *
      * You can only call `editDocument()` in response to a user action, such as a button `'click'` event or a text input's `'input'` event. This generally means you must call it while a UI event handler is on the call stack.
+     * For a plugin's panel, these UI events can trigger a call to `editDocument()`:
+     * * blur
+     * * change
+     * * click
+     * * drop (@since XD 47)
+     * * input
+     * * keydown
+     * * keypress
+     * * keyup
+     * * mousedown
+     * * mouseup
      *
      * For UI events that often occur in rapid-fire clusters, such as dragging a slider or pressing keys in a text field, XD tries to smartly merge consecutive edits into a single atomic Undo step. See the `mergeId` option below to customize this behavior.
      * @param editFunction Function which will perform your plugin's edits to the scenegraph.
@@ -40,6 +51,17 @@ declare module 'application' {
      * * It can return a Promise to extend the duration of the edit asynchronously
      *
      * You can only call `editDocument()` in response to a user action, such as a button `'click'` event or a text input's `'input'` event. This generally means you must call it while a UI event handler is on the call stack.
+     * For a plugin's panel, these UI events can trigger a call to `editDocument()`:
+     * * blur
+     * * change
+     * * click
+     * * drop (@since XD 47)
+     * * input
+     * * keydown
+     * * keypress
+     * * keyup
+     * * mousedown
+     * * mouseup
      *
      * For UI events that often occur in rapid-fire clusters, such as dragging a slider or pressing keys in a text field, XD tries to smartly merge consecutive edits into a single atomic Undo step. See the `mergeId` option below to customize this behavior.
      * @param options Optional settings object (see below). This argument can be omitted.
