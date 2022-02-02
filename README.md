@@ -9,7 +9,7 @@ These Type Declaration files provide your IDE (e.g. Visual Studio Code or WebSto
 To get started
 - install the package via npm: 
   ```
-  npm i @adobexd/typings`
+  npm i adobexd-types`
   ```
 - add the typings file to `"typeRoots"` your `jsconfig.json` or `tsconfig.json`:
   ```json
