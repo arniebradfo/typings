@@ -1,17 +1,17 @@
 {
-  "name": "@adobexd/typings",
+  "name": "adobexd-types",
   "version": "45.0.0",
   "main": "",
   "types": "index.d.ts",
-  "description": "Typings for Adobe XD CC",
+  "description": "Typescript types for Adobe XD CC and UXP",
   "license": "MIT",
-  "homepage": "https://github.com/AdobeXD/typings#readme",
+  "homepage": "https://github.com/arniebradfo/typings#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:AdobeXD/typings.git"
+    "url": "https://github.com/arniebradfo/typings.git"
   },
   "bugs": {
-    "url": "https://github.com/AdobeXD/typings/issues"
+    "url": "https://github.com/arniebradfo/typings/issues"
   },
   "files": [
     "index.d.ts",
