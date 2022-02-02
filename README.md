@@ -15,13 +15,13 @@ To get started
   ```json
   {
     "compilerOptions": {
-      "typeRoots": ["node_modules/@adobexd/typings"]
+      "typeRoots": ["node_modules/adobexd-types"]
     },
   }
   ```
 - (optional) add the [UXP WebComponents](https://www.adobe.io/xd/uxp/uxp/reference-spectrum/) to the `JSX.IntrinsicElements` namespace by adding a reference to a `types.d.ts` file
   ```ts
-  /// <reference path="./node_modules/uxp/jsxWebComponents.d.ts" />
+  /// <reference path="./node_modules/adobexd-types/uxp/jsxWebComponents.d.ts" />
   ```
   
 
