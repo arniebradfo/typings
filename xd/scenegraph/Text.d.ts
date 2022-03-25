@@ -195,5 +195,14 @@ declare module 'scenegraph' {
          * Always false for point text. For area text, true if the text does not fit in the content box and its bottom is being clipped.
          */
         readonly clippedByArea: boolean;
+
+        /**
+         * @since XD 48
+         * 
+         * Sets the text property without changing the Text's styleRanges. Styles aligned with the old text's string indices will continue to be applied to the new string's indices unless you explicitly change styleRanges as well.
+         * 
+         * @param textValue The plain text content of the node, including any hard line breaks but excluding soft line wrap breaks.
+         */
+        updateText(textValue: string): void
     }
 }
